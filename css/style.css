@@ -1,0 +1,108 @@
+/* Styles généraux du body */
+body {
+  background-image: url('../public/Fond.jpeg');
+  background-position: center;
+  padding-left: 15%; /* Ajustez la valeur en fonction de vos besoins */
+}
+
+/* Styles de la barre latérale */
+.sidebar-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%; /* Vous pouvez également ajuster cette valeur si nécessaire */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #141416; /* Couleur de fond de la barre latérale */
+}
+
+/* Styles spécifiques pour la barre de navigation */
+#mainNav {
+  width: 220px; /* Largeur de la barre de navigation */
+  padding-top: 20px; /* Espacement en haut */
+  padding-bottom: 20px; /* Espacement en bas */
+}
+
+/* Styles des liens de la barre de navigation */
+.navbar-nav .nav-link {
+  font-size: 25px; /* Taille de la police ajustée */
+  padding: 10px 15px; /* Espacement entre les liens */
+  transition: color 0.3s; /* Transition de couleur */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #1f1f1f; /* Changement de couleur au survol */
+}
+
+/* Styles du sous-menu déroulant */
+.dropdown-menu {
+  position: absolute;
+  left: 100%; /* Positionner le sous-menu à droite de son élément parent */
+  top: 0; /* Aligner le haut du sous-menu avec le haut de son élément parent */
+  margin-left: 10px; /* Ajuster la marge entre l'élément parent et le sous-menu */
+  background-color: #001518; /* Couleur de fond du sous-menu */
+}
+
+.dropdown-menu li {
+  display: block; 
+}
+
+.dropdown-menu li a {
+  font-size: 20px !important; /* Utilisation de !important pour donner plus de priorité */
+  padding: 8px 20px; /* Espacement entre les éléments de sous-menu */
+}
+
+/* Flèche du sous-menu déroulant */
+.dropdown-toggle::after {
+  border-top-color: #00FFFF; /* Couleur de la flèche */
+}
+
+/* Texte dégradé */
+.gradient-text {
+  font-size: 2em; /* Taille de la police */
+  font-weight: bold;
+  background: linear-gradient(to right, #001317, #00FFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Styles spécifiques pour la barre latérale */
+.sidebar-sticky .nav-link,
+.sidebar-sticky .dropdown-menu a {
+  font-size: 25px; /* Taille de la police ajustée */
+  color: transparent; /* Appliquer la même couleur que le texte dégradé */
+  background: linear-gradient(to right, #001518, #00FFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s; /* Ajouter une transition */
+  margin: 10px 0; /* Espacement entre les éléments du menu */
+}
+
+/* Changement de couleur au survol des éléments de la barre latérale */
+.sidebar-sticky .nav-link:hover {
+  color: #1f1f1f; /* Changement de couleur au survol */
+  opacity: 0.5; /* Légère variation de la transparence */
+}
+
+/* Texte de la section d'accueil */
+.textAccueil {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: aliceblue; /* Couleur du texte de la section d'accueil */
+}
+
+/* Styles pour le contenu du CV */
+.cv {
+  display: flex;
+  margin: auto;
+  width: 600px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 8px 8px 10px 0 #fafafa;
+}
