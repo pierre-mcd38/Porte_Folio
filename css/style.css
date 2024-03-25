@@ -106,3 +106,10 @@ body {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 8px 8px 10px 0 #fafafa;
 }
+
+.Organigramme {
+  display: flex;
+  margin: auto;
+  width: 1000px;
+  border-radius: 20px 20px 20px 20px;
+}
