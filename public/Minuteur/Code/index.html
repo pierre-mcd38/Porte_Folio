@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <span id="minutes" class="huge-timer">00</span>
+            <span id="colon" class="huge-timer">:</span>
+            <span id="seconds" class="huge-timer">00</span>
+        </div>
+        <div id="inputContainer">
+            <input type="number" id="minutesInput" placeholder="Minutes">
+            <input type="number" id="secondsInput" placeholder="Secondes">
+        </div>
+        <div id="buttonContainer">
+            <button id="startButton" class="timer-button">Démarrer</button>
+            <button id="stopButton" class="timer-button">Arrêter</button>
+        </div>
+    </div>
+    <audio id="audio" src="corneDeBrume.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
