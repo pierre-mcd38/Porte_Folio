@@ -95,7 +95,7 @@ body {
   left: 55%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: aliceblue; /* Couleur du texte de la section d'accueil */
+  color: aliceblue;
 }
 
 /* Styles pour le contenu du CV */
@@ -112,4 +112,9 @@ body {
   margin: auto;
   width: 1000px;
   border-radius: 20px 20px 20px 20px;
+}
+
+.principal{
+  text-align: center;
+  color: aliceblue;
 }
