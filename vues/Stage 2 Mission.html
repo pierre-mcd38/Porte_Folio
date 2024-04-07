@@ -56,7 +56,7 @@
   </div>
 
   <div style="text-align: center;">
-    <img src="../public/Secu/LogoSecu.png" alt="Logo CPAM">
+    <img src="../public/Secu/LogoSecu.png" alt="Logo Secu">
   </div>
   <br><br>
 
@@ -64,7 +64,16 @@
   <div class="principal">
 
 
+    BARACUI : utilisation d'un fichier Excel afin d'évaluer les applications nationales aux caisses de France.<br>
+    Fichier placé à un endroit précis avec un nom précis, et ce, pour chaque fichier de chaque secteur.<br>
+    Récupération de ces fichiers puis mise en forme avec de nombreuses macros.<br><br>
 
+    Inventaire : l'inventaire n'étant pas à jour, des équipements se retrouve, dans GEDIFF (logiciel permettant le suivit
+    de matériel), sans propriétaire alors que ce n'est pas le cas, ou simplement, le déplacement d'un agent d'un étage à
+    l'autre qui n'a pas été enregistré dans le logiciel, ci qui peut causer des soucis de localisation.<br><br>
+
+    RPA : (Robotic Process Automation). Beaucoup de personnes passent du temps à faire des copier-collers, ce qui leur
+    faire perdre beaucoup de temps, est répétitif et peut être source d'erreur.
   </div>
 
   <br><br>
@@ -72,33 +81,49 @@
   <h2 class="principal"><u>Problématiques</u></h2><br>
   <div class="principal">
     <ul class="list-unstyled">
-      <li>Créer une application web permettant aux managers de chaque secteur d'évaluer les applications nationales
-      </li>
-      <li>Créer une application web affichant les anomalies détecté lors d'un inventaire (vérification de l'équipement).
-      </li>
+      <li>Créer une application web permettant aux managers de chaque secteur d'évaluer les applications nationales et
+        récupérer celles-ci plus simplement.
+      </li><br>
+      <li>Créer une application web affichant les anomalies détecté lors d'un inventaire (vérification de
+        l'équipement).<br>
+        En combinaison avec un client lourd qui permet de scanner les étiquettes et comparer avec GEDIFF.
+      </li><br>
       <li>Créer des flux RPA à l'aide de Power Automate et automatiser les tâches.</li>
     </ul>
 
+    <br><br>
 
   </div>
 
   <h2 class="principal"><u>Technologie utilisé</u></h2><br>
   <div class="principal">
+    <h5 class="principal"><u>Symfony</u></h5><br>
     <div style="text-align: center;">
-      <img src="../public/Secu/StructureSymfony.png" alt="Structure Symfony">
+      <table style="width: 100%;">
+        <tr>
+          <td style="width: 40%; text-align: center;">
+            <img src="../public/Secu/StructureSymfony.png" alt="Site Ville" style="max-width: 100%;">
+          </td>
+          <td style="width: 60%; text-align: left;">
+            <p>bin : contient la console, executable et script pour le projet</p>
+            <p>config : contient les configurations des différents bundles, les routes, la sécurité et les services</p>
+            <p>public : contient le contrôleur frontal "index.php" et les "assets"</p>
+            <p>src : contient le projet (controleur, entités, répertoire, Form)</p>
+            <p>templates : contient les vues</p>
+            <p>var : contient les logs, le cache</p>
+            <p>vendor : contient les sources de bundles tiers</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br><br>
+
+    <h5 class="principal">Power Automate</h5>
+    <div style="display: flex; justify-content: center;">
+      <img src="../public/Secu/RPA/flux.png" alt="Site Final" style="width: 50%;">&nbsp;
+      <img src="../public/Secu/RPA/FluxExcel.png" alt="Site Ville" style="width: 50%;">
     </div>
 
-
-
-  </div>
-
-
-  <br><br>
-
-  <h2 class="principal"><u>Résultat</u></h2><br>
-  <div style="display: flex; justify-content: center;">
-    <img src="../public/Mairie/SiteVille.png" alt="Site Ville" style="width: 50%;">&nbsp;
-    <img src="../public/Mairie/SiteFinal.png" alt="Site Final" style="width: 50%;">
   </div>
 
   <br><br>
@@ -106,12 +131,76 @@
   <h2 class="principal"><u>Bénéfices personnels</u></h2><br>
   <div class="principal">
     <ul class="list-unstyled">
-      <li>Travails en équipe</li>
+      <li>Travail en équipe</li>
       <li>Découverte de Symphony</li>
       <li>Utilisation de RPA</li>
-      <li></li>
+      <li>Immersion concrète dans le monde de l'informatique en entreprises</li>
     </ul>
   </div>
+
+
+  <br><br>
+
+  <h2 class="principal"><u>Autres projets</u></h2><br>
+  <div class="principal">
+    <ul class="list-unstyled">
+      <li>Minuteur</li>
+      <li>Lanceur PFS</li>
+      <li>Surveillance serveur</li>
+
+    </ul>
+  </div>
+
+  <br><br>
+
+  <h2 class="principal"><u>Annexes</u></h2><br>
+  <h4 class="principal">BARACUI</h4>
+  <h5 class="principal"><u>Manager</u></h5><br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Baracui/Affichage/Accueil.PNG" alt="Accueil BARCACUI" style="width: 90%;">
+  </div>
+  <br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Baracui/Affichage/Manager/Evaluation.PNG" alt="Evaluation manager"
+      style="width: 50%;">&nbsp;
+    <img src="../public/Secu/Baracui/Affichage/Manager/ModifEvaluation.PNG" alt="Modification Manager"
+      style="width: 50%;">
+  </div><br>
+  <h5 class="principal"><u>Admin</u></h5><br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Baracui/Affichage/Admin/TouteLesEvaluations.PNG" alt="Toutes les évaluations"
+      style="width: 50%;">&nbsp;
+    <img src="../public/Secu/Baracui/Affichage/Admin/Historique.PNG" alt="Historique" style="width: 50%;">
+  </div><br>
+  <h5 class="principal"><u>Superviseur</u></h5><br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Baracui/Affichage/Superviseur/Supervision.PNG" alt="Supervision" style="width: 90%;">
+  </div><br>
+
+  <br><br>
+
+  <h4 class="principal">Inventaire</h4>
+  <h5 class="principal"><u>Agent</u></h5><br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Inventaire/Affichage/Accueil.PNG" alt="Accueil Inventaire" style="width: 90%;">
+  </div>
+  <br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Inventaire/Affichage/EnCours.PNG" alt="En cours" style="width: 90%;">&nbsp;
+  </div><br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Inventaire/Affichage/Historique.PNG" alt="En cours" style="width: 90%;">&nbsp;
+  </div><br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Inventaire/Affichage/TouteLesAnomalies.PNG" alt="En cours" style="width: 90%;">&nbsp;
+  </div><br><br>
+  <h5 class="principal"><u>Responsable</u></h5><br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Inventaire/Affichage/Validation.PNG" alt="En cours" style="width: 90%;">&nbsp;
+  </div><br>
+  <div style="display: flex; justify-content: center;">
+    <img src="../public/Secu/Inventaire/Affichage/Importation.PNG" alt="En cours" style="width: 90%;">&nbsp;
+  </div><br>
 
 
 
