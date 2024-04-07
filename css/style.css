@@ -118,3 +118,11 @@ body {
   text-align: center;
   color: aliceblue;
 }
+
+.bottom-content {
+  position: absolute;
+  bottom: 20px; /* Ajustez la distance depuis le bas selon vos besoins */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
